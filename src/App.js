@@ -6,17 +6,19 @@ export default function App() {
 
   const handleSubmit = async (values, { setSubmitting }) => {
     console.log(values)
-    console.log("post")
+
     const requestOptions = {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json',  },
-    body: JSON.stringify(values)
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(values)
     };
-    fetch('http://localhost:8000/match', requestOptions)
-    .then(response => console.log(response.json()))
-    .then(data => this.setState({ postId: data.id }));
+    const response = await fetch('http://localhost:8000/match', requestOptions);
+    const data = await response.json();
+
+    console.log(data)
+
     setSubmitting(true)
-    setFormValues(values)
+    setFormValues(data)
     await new Promise((r) => setTimeout(r, 1000))
     setSubmitting(false)
   }
