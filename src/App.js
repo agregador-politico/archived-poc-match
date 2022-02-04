@@ -12,7 +12,7 @@ export default function App() {
   }
 
   const formSchema = [
-    { name: 'nome', label: 'Nome', componentType: 'text', required: true },
+    { name: 'nome', label: 'Nome', componentType: 'text', required: false },
     //{ name: 'playable', label: 'Playable', componentType: 'checkbox' },
     {
       name: 'pergunta-1',
