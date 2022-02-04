@@ -149,9 +149,10 @@ export default function App() {
         <div className="form section">
           <AdvancedForm schema={formSchema} onSubmit={handleSubmit} />
         </div>
-        <div className="results section">
-          <pre>{JSON.stringify(formValues, null, 2)}</pre>
-        </div>
+      </div>
+      <p/>
+      <div className="results section">
+        <pre>{JSON.stringify(formValues, null, 2)}</pre>
       </div>
     </>
   )
