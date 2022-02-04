@@ -12,7 +12,7 @@ export default function App() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(values)
     };
-    const response = await fetch('http://localhost:8000/match', requestOptions);
+    const response = await fetch('http://67.205.161.189:8000/match', requestOptions);
     const data = await response.json();
 
     console.log(data)
