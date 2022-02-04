@@ -5,6 +5,16 @@ export default function App() {
   const [formValues, setFormValues] = useState([])
 
   const handleSubmit = async (values, { setSubmitting }) => {
+    console.log(values)
+    console.log("post")
+    const requestOptions = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json',  },
+    body: JSON.stringify(values)
+    };
+    fetch('http://localhost:8000/match', requestOptions)
+    .then(response => console.log(response.json()))
+    .then(data => this.setState({ postId: data.id }));
     setSubmitting(true)
     setFormValues(values)
     await new Promise((r) => setTimeout(r, 1000))
@@ -13,7 +23,6 @@ export default function App() {
 
   const formSchema = [
     { name: 'nome', label: 'Nome', componentType: 'text', required: false },
-    //{ name: 'playable', label: 'Playable', componentType: 'checkbox' },
     {
       name: 'pergunta-1',
       label: 'Como você votaria no projeto da Reforma do Imposto de Renda (PL 2337/21)?',
@@ -157,24 +166,3 @@ export default function App() {
     </>
   )
 }
-
-    //{
-    //  name: 'class',
-    //  label: 'Class',
-    //  componentType: 'select',
-    //  options: [
-    //    { label: 'Ranger', value: 'ranger' },
-    //    { label: 'Wizard', value: 'wizard' },
-    //    { label: 'Healer', value: 'healer' },
-    //  ],
-    //},
-    //{
-    //  name: 'spell',
-    //  label: 'Spell',
-    //  componentType: 'select',
-    //  options: [
-    //    { label: 'Fire', value: 'fire' },
-    //    { label: 'Ice', value: 'ice' },
-    //  ],
-    //  condition: { key: 'class', value: 'wizard', operator: '=' },
-    //},

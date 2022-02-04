@@ -34,15 +34,6 @@ export const getDefaultValues = (schema) => {
 
 
 export const getValidationSchema = (schema) => {
-    console.log(schema)
-    const requestOptions = {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(schema)
-    };
-    fetch('http://localhost:8000/match', requestOptions)
-    .then(response => response.json())
-    .then(data => this.setState({ postId: data.id }));
   const validationObject = schema.reduce((acc, val) => {
     let validationType
 
