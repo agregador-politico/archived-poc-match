@@ -19,9 +19,9 @@ export default function App() {
       label: 'Como você votaria no projeto da Reforma do Imposto de Renda (PL 2337/21)?',
       componentType: 'radioGroup',
       options: [
-        { label: 'A favor', value: 'a_favor' },
-        { label: 'Contra', value: 'contra' },
-        { label: 'Não sei', value: 'nao_sei' },
+        { label: 'A favor', value: '1.0' },
+        { label: 'Contra', value: '0.0' },
+        { label: 'Não sei', value: '0.5' },
       ],
     },
     {
@@ -29,9 +29,9 @@ export default function App() {
       label: 'Como você votaria no projeto da Autonomia do Banco Central (PLP 19/19)?',
       componentType: 'radioGroup',
       options: [
-        { label: 'A favor', value: 'a_favor' },
-        { label: 'Contra', value: 'contra' },
-        { label: 'Não sei', value: 'nao_sei' },
+        { label: 'A favor', value: '1.0' },
+        { label: 'Contra', value: '0.0' },
+        { label: 'Não sei', value: '0.5' },
       ],
     },
     {
@@ -39,9 +39,9 @@ export default function App() {
       label: 'Como você votaria no projeto da Privatização dos Correios (PL 591/2021)?',
       componentType: 'radioGroup',
       options: [
-        { label: 'A favor', value: 'a_favor' },
-        { label: 'Contra', value: 'contra' },
-        { label: 'Não sei', value: 'nao_sei' },
+        { label: 'A favor', value: '1.0' },
+        { label: 'Contra', value: '0.0' },
+        { label: 'Não sei', value: '0.5' },
       ],
     },
     {
@@ -49,9 +49,9 @@ export default function App() {
       label: 'Como você votaria no projeto que flexibiliza as regras de licenciamento ambiental (PL 3729/04)?',
       componentType: 'radioGroup',
       options: [
-        { label: 'A favor', value: 'a_favor' },
-        { label: 'Contra', value: 'contra' },
-        { label: 'Não sei', value: 'nao_sei' },
+        { label: 'A favor', value: '1.0' },
+        { label: 'Contra', value: '0.0' },
+        { label: 'Não sei', value: '0.5' },
       ],
     },
     {
@@ -59,9 +59,9 @@ export default function App() {
       label: 'Como você votaria no projeto que flexibiliza venda e porte de armas de fogo (PL 3723/19)?',
       componentType: 'radioGroup',
       options: [
-        { label: 'A favor', value: 'a_favor' },
-        { label: 'Contra', value: 'contra' },
-        { label: 'Não sei', value: 'nao_sei' },
+        { label: 'A favor', value: '1.0' },
+        { label: 'Contra', value: '0.0' },
+        { label: 'Não sei', value: '0.5' },
       ],
     },
     {
@@ -69,9 +69,9 @@ export default function App() {
       label: 'Como você votaria no projeto da Reforma da Previdência (PEC 06/2019)?',
       componentType: 'radioGroup',
       options: [
-        { label: 'A favor', value: 'a_favor' },
-        { label: 'Contra', value: 'contra' },
-        { label: 'Não sei', value: 'nao_sei' },
+        { label: 'A favor', value: '1.0' },
+        { label: 'Contra', value: '0.0' },
+        { label: 'Não sei', value: '0.5' },
       ],
     },
     {
@@ -79,9 +79,9 @@ export default function App() {
       label: 'Como você votaria no projeto da Reforma Eleitoral (PEC 125/2011)?',
       componentType: 'radioGroup',
       options: [
-        { label: 'A favor', value: 'a_favor' },
-        { label: 'Contra', value: 'contra' },
-        { label: 'Não sei', value: 'nao_sei' },
+        { label: 'A favor', value: '1.0' },
+        { label: 'Contra', value: '0.0' },
+        { label: 'Não sei', value: '0.5' },
       ],
     },
     {
@@ -89,9 +89,9 @@ export default function App() {
       label: 'Como você votaria no projeto da Reforma Trabalhista (MP 1045/21)?',
       componentType: 'radioGroup',
       options: [
-        { label: 'A favor', value: 'a_favor' },
-        { label: 'Contra', value: 'contra' },
-        { label: 'Não sei', value: 'nao_sei' },
+        { label: 'A favor', value: '1.0' },
+        { label: 'Contra', value: '0.0' },
+        { label: 'Não sei', value: '0.5' },
       ],
     },
     {
@@ -99,9 +99,9 @@ export default function App() {
       label: 'Como você votaria no projeto de privatização da Eletrobras (MP 1031/21)?',
       componentType: 'radioGroup',
       options: [
-        { label: 'A favor', value: 'a_favor' },
-        { label: 'Contra', value: 'contra' },
-        { label: 'Não sei', value: 'nao_sei' },
+        { label: 'A favor', value: '1.0' },
+        { label: 'Contra', value: '0.0' },
+        { label: 'Não sei', value: '0.5' },
       ],
     },
     {
@@ -109,9 +109,9 @@ export default function App() {
       label: 'Como você votaria no Pacote Anticrime (PL 10372/18)?',
       componentType: 'radioGroup',
       options: [
-        { label: 'A favor', value: 'a_favor' },
-        { label: 'Contra', value: 'contra' },
-        { label: 'Não sei', value: 'nao_sei' },
+        { label: 'A favor', value: '1.0' },
+        { label: 'Contra', value: '0.0' },
+        { label: 'Não sei', value: '0.5' },
       ],
     },
     {
@@ -119,9 +119,9 @@ export default function App() {
       label: 'Como você votaria no projeto do Voto Impresso (PEC 135/19)?',
       componentType: 'radioGroup',
       options: [
-        { label: 'A favor', value: 'a_favor' },
-        { label: 'Contra', value: 'contra' },
-        { label: 'Não sei', value: 'nao_sei' },
+        { label: 'A favor', value: '1.0' },
+        { label: 'Contra', value: '0.0' },
+        { label: 'Não sei', value: '0.5' },
       ],
     },
     {
@@ -129,9 +129,9 @@ export default function App() {
       label: 'Como você votaria no projeto do Teto de Gastos (PEC 241/2016)?',
       componentType: 'radioGroup',
       options: [
-        { label: 'A favor', value: 'a_favor' },
-        { label: 'Contra', value: 'contra' },
-        { label: 'Não sei', value: 'nao_sei' },
+        { label: 'A favor', value: '1.0' },
+        { label: 'Contra', value: '0.0' },
+        { label: 'Não sei', value: '0.5' },
       ],
     },
     {
