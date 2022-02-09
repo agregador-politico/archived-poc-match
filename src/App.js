@@ -154,17 +154,54 @@ export default function App() {
 
   return (
     <>
-      <h1>Bem vindo ao Match! Aqui você descobre com qual deputado vc realmente da MATCH!</h1>
+      
+      <nav className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+          <div className="container">
+              <a className="navbar-brand" href="#page-top">Agragador Político</a>
+          </div>
+      </nav>
+      <header className="masthead bg-primary text-white text-center">
+            <div className="container d-flex align-items-center flex-column">
+               
+                <img className="masthead-avatar mb-5" src="./img/mulher-icone.png" alt="..." />
+               
+                <h1 className="masthead-heading text-uppercase mb-0">Agragador Político</h1>
+               
+                <div className="divider-custom divider-light">
+                    <div className="divider-custom-line"></div>
+                    <div className="divider-custom-icon"><i className="fas fa-star"></i></div>
+                    <div className="divider-custom-line"></div>
+                </div>
 
-      <div className="flex">
-        <div className="form section">
-          <AdvancedForm schema={formSchema} onSubmit={handleSubmit} />
-        </div>
-      </div>
-      <p/>
-      <div className="results section">
-        <pre>{JSON.stringify(formValues, null, 2)}</pre>
-      </div>
+                <p className="masthead-subheading font-weight-light mb-0">
+                  Bem vindo ao Match! Aqui você descobre com qual deputado vc realmente da MATCH!
+                </p>
+            </div>
+        </header>
+      <section className="page-section portfolio" id="portfolio">
+            <div className="container">
+              <div className="flex">
+                <div className="form section">
+                  <AdvancedForm schema={formSchema} onSubmit={handleSubmit}>
+                  </AdvancedForm>
+                </div>
+              </div>
+            </div>
+      </section>
+      <section className="page-section bg-primary text-white mb-0" id="about">
+        <h2 className="page-section-heading text-center text-uppercase text-white">Resultado</h2>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-4 ms-auto">
+                <p className="lead">
+                  {
+                    JSON.stringify(formValues, null, 2)
+                  }
+                </p>
+              </div>
+            </div>
+          </div>
+      </section>
     </>
   )
 }

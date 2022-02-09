@@ -101,7 +101,13 @@ export const AdvancedForm = ({
                 />
               )
             })}
-            <button type="submit" disabled={!isValid || isSubmitting}>
+            <button 
+              className="button navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarResponsive" 
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                href="#about" onClick={() => '#about'}
+              type="submit" disabled={!isValid || isSubmitting}>
               {buttonLabel}
             </button>
           </form>
